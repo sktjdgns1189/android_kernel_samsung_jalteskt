@@ -178,6 +178,7 @@ struct touchkey_i2c {
 	bool enabled_flip;
 #endif
 	int support_multi_touch;
+	atomic_t keypad_enable;
 };
 
 extern struct class *sec_class;
