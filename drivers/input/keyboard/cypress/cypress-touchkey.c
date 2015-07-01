@@ -871,7 +871,7 @@ static irqreturn_t touchkey_interrupt(int irq, void *dev_id)
 {
 	struct touchkey_i2c *tkey_i2c = dev_id;
 	u8 data[3];
-	int ret;
+	int ret = 0;
 	int retry = 10;
 	int pressed = 0;
 	int i = 0;
